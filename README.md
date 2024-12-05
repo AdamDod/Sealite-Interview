@@ -1,7 +1,6 @@
 ﻿Assumptions 
 - A direct link cannot reconnect to the same town
 - A direct link cannot have a distance of 0
-- 
 
 Overview
 
