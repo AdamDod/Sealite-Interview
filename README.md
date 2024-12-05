@@ -4,6 +4,7 @@
 - 
 
 Overview
+
 	Based on the question promt this is a directional weighted graph problem.
 
 	The first step to solve this is understanding how to interperate this in c#.
@@ -33,6 +34,7 @@ Problem 1 - Find the distace between routes
 	To find the length of the route we need to add all the edge weights together
 
 Problem 2 - A route that does no exist
+
 	In this case i decided to throw an exception, assuming that this will be a part of a larger application that can give the user better feedback
 	For the unit tests we can just assert that the exception will occur
 
