@@ -19,10 +19,10 @@ jobs:
 
       - name: Install dependencies
         run: dotnet restore
-        working-directory: src/TrainRoutes
+        working-directory: TrainRoutes
       - name: Build
         run: dotnet build
-        working-directory: src/TrainRoutes
+        working-directory: TrainRoutes
       - name: Test with the dotnet CLI
         run: dotnet test
-        working-directory: src/TrainRoutes
+        working-directory: TrainRoutes
