@@ -99,9 +99,7 @@ namespace ConsoleApp.Models.Graph
             {
                 if (depth >= minDepth)
                 {
-                    //Console.WriteLine(string.Join(" ", localPathList));
                     allPaths.Add(new List<int>(localPathList));
-                    return allPaths;
                 }          
                 
             }
@@ -114,7 +112,7 @@ namespace ConsoleApp.Models.Graph
                 depth++;
                 allPaths.AddRange(FindAllPathsDepthUtil(i, finish, localPathList, false, minDepth, maxDepth, depth));                
                 depth--;
-                localPathList.Remove(i);
+                localPathList.RemoveAt(localPathList.FindLastIndex(x => x == i));
 
             }
             return allPaths;
@@ -208,7 +206,6 @@ namespace ConsoleApp.Models.Graph
                 {
                     //Console.WriteLine(string.Join(" ", localPathList));
                     allPaths.Add(new List<int>(localPathList));
-                    return allPaths;
                 }
 
             }
@@ -217,13 +214,14 @@ namespace ConsoleApp.Models.Graph
 
             foreach (var i in adjVerts)
             {
+
                 int edgeWeight = GetEdgeWeight(source, i);
 
                 localPathList.Add(i);
                 currentWeight += edgeWeight;
                 allPaths.AddRange(FindAllPathsWeightUtil(i, finish, localPathList, false, minWeight, maxWeight, currentWeight));
                 currentWeight -= edgeWeight;
-                localPathList.Remove(i);
+                localPathList.RemoveAt(localPathList.FindLastIndex(x => x == i));
 
             }
             return allPaths;

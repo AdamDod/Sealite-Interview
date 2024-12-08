@@ -9,7 +9,7 @@ namespace RoutesTests
         [InlineData(new int[] { 0, 3 }, 5)]
         [InlineData(new int[] { 0, 3, 2 }, 13)]
         [InlineData(new int[] { 0, 4, 1, 2, 3 }, 22)]
-        public void Distance(int[] route,int expected)
+        public void AllRoutesDistance(int[] route,int expected)
         {
             Graph graph = CreateGraph();
 
@@ -18,7 +18,7 @@ namespace RoutesTests
 
         [Theory]
         [InlineData(new int[] { 0, 4, 3 }, 22)]
-        public void DistanceFailed(int[] route, int expected)
+        public void AllRoutesDistanceFailed(int[] route, int expected)
         {
             Graph graph = CreateGraph();
 
@@ -43,6 +43,15 @@ namespace RoutesTests
             Graph graph = CreateGraph();
 
             Assert.Equal(expected, graph.FindShortestPath(start, end));
+        }
+
+        [Theory]
+        [InlineData(2, 2, 0, 29, 7)]
+        public void AllRoutesWeight(int start, int end, int minWeight, int maxWeight, int expected)
+        {
+            Graph graph = CreateGraph();
+
+            Assert.Equal(expected, graph.FindAllPathsWeight(start, end, minWeight, maxWeight).Count());
         }
 
         public Graph CreateGraph()

@@ -30,44 +30,45 @@ namespace ConsoleApp
                 adjMatrixGraph.AddEdge(4, 1, 3);
                 adjMatrixGraph.AddEdge(0, 4, 7);
 
-                int[] route1 = { 0, 1, 2 };
-                Console.Write("A=>B=>C is ");
-                Console.WriteLine(adjMatrixGraph.FindLengthOfRoute(route1));
+                //int[] route1 = { 0, 1, 2 };
+                //Console.Write("A=>B=>C is ");
+                //Console.WriteLine(adjMatrixGraph.FindLengthOfRoute(route1));
 
-                int[] route2 = { 0, 3 };
-                Console.Write("A=>D is ");
-                Console.WriteLine(adjMatrixGraph.FindLengthOfRoute(route2));
+                //int[] route2 = { 0, 3 };
+                //Console.Write("A=>D is ");
+                //Console.WriteLine(adjMatrixGraph.FindLengthOfRoute(route2));
 
-                int[] route3 = { 0, 3, 2 };
-                Console.Write("A=>D=>C is ");
-                Console.WriteLine(adjMatrixGraph.FindLengthOfRoute(route3));
+                //int[] route3 = { 0, 3, 2 };
+                //Console.Write("A=>D=>C is ");
+                //Console.WriteLine(adjMatrixGraph.FindLengthOfRoute(route3));
 
-                int[] route4 = { 0, 4, 1, 2, 3 };
-                Console.Write("A=>E=>B=>C=>D is ");
-                Console.WriteLine(adjMatrixGraph.FindLengthOfRoute(route4));
+                //int[] route4 = { 0, 4, 1, 2, 3 };
+                //Console.Write("A=>E=>B=>C=>D is ");
+                //Console.WriteLine(adjMatrixGraph.FindLengthOfRoute(route4));
 
-                int[] route_NotFound = { 1, 4, 3 };
-                Console.Write("A=>E=>D is ");
-                Console.WriteLine(adjMatrixGraph.FindLengthOfRoute(route_NotFound));
+                //int[] route_NotFound = { 1, 4, 3 };
+                //Console.Write("A=>E=>D is ");
+                //Console.WriteLine(adjMatrixGraph.FindLengthOfRoute(route_NotFound));
 
-                Console.WriteLine("C=>C with max 3 stops");
-                Console.WriteLine("# of possible routes = " + adjMatrixGraph.FindAllPathsDepth(2, 2, 0, 3).Count());
+                //Console.WriteLine("C=>C with max 3 stops");
+                //Console.WriteLine("# of possible routes = " + adjMatrixGraph.FindAllPathsDepth(2, 2, 0, 3).Count());
 
-                Console.WriteLine("A=>C with exactly 4 stops");
-                Console.WriteLine("# of possible routes = " + adjMatrixGraph.FindAllPathsDepth(0, 2, 4, 4).Count());
+                //Console.WriteLine("A=>C with exactly 4 stops");
+                //Console.WriteLine("# of possible routes = " + adjMatrixGraph.FindAllPathsDepth(0, 2, 4, 4).Count());
 
 
-                Console.WriteLine("Shortest route between A and C");
-                Console.WriteLine("Length of route =  " + adjMatrixGraph.FindShortestPath(0, 2));
+                //Console.WriteLine("Shortest route between A and C");
+                //Console.WriteLine("Length of route =  " + adjMatrixGraph.FindShortestPath(0, 2));
 
-                Console.WriteLine("Shortest route between B and B");
-                Console.WriteLine("Length of route = " + adjMatrixGraph.FindShortestPath(1, 1));
+                //Console.WriteLine("Shortest route between B and B");
+                //Console.WriteLine("Length of route = " + adjMatrixGraph.FindShortestPath(1, 1));
 
-                Console.WriteLine("Shortest route between B and B");
-                Console.WriteLine("Length of route = " + adjMatrixGraph.FindShortestPath(1, 1));
+                //Console.WriteLine("Shortest route between B and B");
+                //Console.WriteLine("Length of route = " + adjMatrixGraph.FindShortestPath(1, 1));
 
                 Console.WriteLine("Find routes between C and C with distance less than 30");
-                Console.WriteLine("# of routes " + adjMatrixGraph.FindAllPathsWeight(2, 2, 0,30).Count());
+                var x = adjMatrixGraph.FindAllPathsWeight(2, 2, 0, 29);
+                Console.WriteLine("# of routes " + adjMatrixGraph.FindAllPathsWeight(2, 2, 0,29).Count());
 
             }
             catch (Exception e) 
