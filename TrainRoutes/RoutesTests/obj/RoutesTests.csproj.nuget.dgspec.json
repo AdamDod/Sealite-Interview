@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Coding\\Sealite_Interview\\TrainRoutes\\RoutesTests\\RoutesTests.csproj": {}
+    "D:\\Coding\\Sealite Interview\\Sealite-Interview\\TrainRoutes\\RoutesTests\\RoutesTests.csproj": {}
   },
   "projects": {
-    "D:\\Coding\\Sealite_Interview\\TrainRoutes\\ConsoleApp\\ConsoleApp.csproj": {
+    "D:\\Coding\\Sealite Interview\\Sealite-Interview\\TrainRoutes\\ConsoleApp\\ConsoleApp.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\Coding\\Sealite_Interview\\TrainRoutes\\ConsoleApp\\ConsoleApp.csproj",
+        "projectUniqueName": "D:\\Coding\\Sealite Interview\\Sealite-Interview\\TrainRoutes\\ConsoleApp\\ConsoleApp.csproj",
         "projectName": "ConsoleApp",
-        "projectPath": "D:\\Coding\\Sealite_Interview\\TrainRoutes\\ConsoleApp\\ConsoleApp.csproj",
+        "projectPath": "D:\\Coding\\Sealite Interview\\Sealite-Interview\\TrainRoutes\\ConsoleApp\\ConsoleApp.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
@@ -19,14 +19,14 @@
         "net472": {}
       }
     },
-    "D:\\Coding\\Sealite_Interview\\TrainRoutes\\RoutesTests\\RoutesTests.csproj": {
+    "D:\\Coding\\Sealite Interview\\Sealite-Interview\\TrainRoutes\\RoutesTests\\RoutesTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Coding\\Sealite_Interview\\TrainRoutes\\RoutesTests\\RoutesTests.csproj",
+        "projectUniqueName": "D:\\Coding\\Sealite Interview\\Sealite-Interview\\TrainRoutes\\RoutesTests\\RoutesTests.csproj",
         "projectName": "RoutesTests",
-        "projectPath": "D:\\Coding\\Sealite_Interview\\TrainRoutes\\RoutesTests\\RoutesTests.csproj",
+        "projectPath": "D:\\Coding\\Sealite Interview\\Sealite-Interview\\TrainRoutes\\RoutesTests\\RoutesTests.csproj",
         "packagesPath": "C:\\Users\\adamd\\.nuget\\packages\\",
-        "outputPath": "D:\\Coding\\Sealite_Interview\\TrainRoutes\\RoutesTests\\obj\\",
+        "outputPath": "D:\\Coding\\Sealite Interview\\Sealite-Interview\\TrainRoutes\\RoutesTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adamd\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,8 +44,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Coding\\Sealite_Interview\\TrainRoutes\\ConsoleApp\\ConsoleApp.csproj": {
-                "projectPath": "D:\\Coding\\Sealite_Interview\\TrainRoutes\\ConsoleApp\\ConsoleApp.csproj"
+              "D:\\Coding\\Sealite Interview\\Sealite-Interview\\TrainRoutes\\ConsoleApp\\ConsoleApp.csproj": {
+                "projectPath": "D:\\Coding\\Sealite Interview\\Sealite-Interview\\TrainRoutes\\ConsoleApp\\ConsoleApp.csproj"
               }
             }
           }

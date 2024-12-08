@@ -171,7 +171,7 @@ namespace ConsoleApp.Models.Graph
                     shortestPath = new List<int>(result.Item1);
                 }
                 currentWeight -= edgeWeight;
-                localPathList.Remove(i);
+                localPathList.RemoveAt(localPathList.FindLastIndex(x => x == i));
                 visited.Remove(i);
 
             }
@@ -190,8 +190,6 @@ namespace ConsoleApp.Models.Graph
             return x;
         }
 
-
-        //Not complete, this function needs to itterate back over nodes that lead to a path to find another path
         private List<List<int>> FindAllPathsWeightUtil(int source, int finish, List<int> localPathList, bool initial, int minWeight, int maxWeight, int currentWeight)
         {
             List<List<int>> allPaths = new List<List<int>>();

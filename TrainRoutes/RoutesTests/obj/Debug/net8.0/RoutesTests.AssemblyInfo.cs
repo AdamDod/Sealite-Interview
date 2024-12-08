@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RoutesTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f8042fd583e5a256280645116a7ee2174484a08")]
 [assembly: System.Reflection.AssemblyProductAttribute("RoutesTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RoutesTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
