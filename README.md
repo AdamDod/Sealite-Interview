@@ -50,11 +50,9 @@ Problem 4 - Length of the shortest route between 2 points
 	This is a simmilar problem to 3, however we need to keep track of the distance (weight) 
 	instead of the depth and only keep the route if it is smaller than the current smallest
 
-Problem 5 - 
+Problem 5 - Find the number of trips from point to point with a max  distance of x
 	
-	This issue is simmilar to 4 however we want to find all options
-
-	I did not have time to complete this one
+	This issue is simmilar to the 3rd problem however we want to have a max weight not depth.
 
 Unit tests
 	
