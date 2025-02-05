@@ -4,15 +4,15 @@ Develop a .Net console application that finds train routes between towns given a
 The format of lines in the file is  '<' From Town A '>,''<'To Town B'>','<'distance between Town A and Town B'>'
 
 Routes;
-A,B,5
-B,C,4
-C,D,8
-D,C,8
-D,E,6
-A,D,5
-C,E,2
-E,B,3
-A,E,7
+- A,B,5
+- B,C,4
+- C,D,8
+- D,C,8
+- D,E,6
+- A,D,5
+- C,E,2
+- E,B,3
+- A,E,7
 
 The application has to successfully run the following tests
 
