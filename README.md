@@ -1,4 +1,34 @@
-﻿Assumptions 
+Prompt:
+Develop a .Net console application that finds train routes between towns given an input file. In the input file, every line represents a direct link from one town to another and its length (distance).
+
+The format of lines in the file is  <From Town A>,<To Town B>,<distance between Town A and Town B>
+
+Routes;
+A,B,5
+B,C,4
+C,D,8
+D,C,8
+D,E,6
+A,D,5
+C,E,2
+E,B,3
+A,E,7
+
+The application has to successfully run the following tests
+
+Test #1: The distance of the route A=>B=>C is 9
+Test #2: The distance of the route A=>D is 5
+Test #3: The distance of the route A=>D=>C is 13
+Test #4: The distance of the route A=>E=>B=>C=>D is 22
+Test #5: Route A=>E=>D doesn't exist
+Test #6: Number of trips from C to C with maximum 3 stops is 2 ( C=>D=>C, C=>E=>B=>C )
+Test #7: Number of trips from A to C with exactly 4 stops is 3 ( A=>B=>C=>D=>C, A=>D=>C=>D=>C, A=>D=>E=>B=>C )
+Test #8: The length of the shortest route from A to C is 9 ( A=>B=>C )
+Test #9: The length of the shortest route from B to B is 9 ( B=>C=>E=>B )
+Test #10: The number of trips from C to C with distance less than 30 is 7 ( C=>D=>C, C=>D=>C=>E=>B=>C, C=>D=>E=>B=>C, C=>E=>B=>C, C=>E=>B=>C=>D=>C, C=>E=>B=>C=>E=>B=>C, C=>E=>B=>C=>E=>B=>C=>E=>B=>C )
+
+ 
+ Assumptions 
 - A direct link cannot reconnect to the same town
 - A direct link cannot have a distance of 0
 
