@@ -1,7 +1,7 @@
 Prompt:
 Develop a .Net console application that finds train routes between towns given an input file. In the input file, every line represents a direct link from one town to another and its length (distance).
 
-The format of lines in the file is  <From Town A>,<To Town B>,<distance between Town A and Town B>
+The format of lines in the file is  '<' From Town A '>,''<'To Town B'>','<'distance between Town A and Town B'>'
 
 Routes;
 A,B,5
